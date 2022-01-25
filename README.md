@@ -1,2 +1,2 @@
-# hasherYefee
-A hasher for JavaScript
+# hasher Yefee
+## Working in progress...
