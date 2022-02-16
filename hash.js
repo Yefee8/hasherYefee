@@ -30,6 +30,33 @@ function hash(text){
     return hashedPassword;
 }
 
-function unHash(){
-    // working on progress
+let anewPass = ''
+let apasswordLetters = []
+let ahashList = []
+let ahashedPassword = ''
+function unHash(text){
+    anewPass = text
+    for(let key in text){
+        apasswordLetters.push(text[key])
+    }
+    for(let i = 0; i < apasswordLetters.length + 1; i++ ){
+        letters.map((letter, index) => {
+            if(apasswordLetters[i] === 'a'){
+                ahashList.push('z')
+            }
+            else if(apasswordLetters[i] === 'Z'){
+                ahashList.push('Z')
+            }
+            else if(apasswordLetters[i] === letter){
+                ahashList.push(letters[index - 1])
+            }
+            else if(apasswordLetters[i] === letter.toUpperCase()){
+                ahashList.push(letters[index - 1].toUpperCase())
+            }
+        })
+    }
+    for(let key in ahashList){
+        ahashedPassword += ahashList[key]
+    }
+    return ahashedPassword;
 }
