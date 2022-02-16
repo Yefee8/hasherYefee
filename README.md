@@ -4,7 +4,7 @@
 ## Documentation
 
 ### Why HasherYefee?
-Because it's very basic and lightweight.
+Because it's easy to use and lightweight.
 
 ### Get started
 To get started we need the import HasherYefee, 2 ways to import library;
